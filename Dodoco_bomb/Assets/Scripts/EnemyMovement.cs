@@ -72,7 +72,6 @@ public class EnemyMovement : MonoBehaviour
     private void DeathSequence()
     {
         enabled = false;
-        GetComponent<BombController>().enabled = false;
 
         spriteRendererUp.enabled = false;
         spriteRendererDown.enabled = false;
