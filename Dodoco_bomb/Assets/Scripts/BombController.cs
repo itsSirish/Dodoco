@@ -5,11 +5,19 @@ using UnityEngine.Tilemaps;
 public class BombController : MonoBehaviour
 {
     [Header("Bomb")]
-    public KeyCode inputKey = KeyCode.LeftShift;
+    public KeyCode inputKey = KeyCode.Space;
     public GameObject bombPrefab;
     public float bombFuseTime = 3f;
     public int bombAmount = 1;
     private int bombsRemaining;
+
+    private Vector2[] directions = new Vector2[]
+        {
+            new Vector2(1, 0),   
+            new Vector2(0, 1),   
+            new Vector2(-1, 0),  
+            new Vector2(0, -1)   
+        };
 
     [Header("Explosion")]
     public Explosion explosionPrefab;
@@ -92,6 +100,21 @@ public class BombController : MonoBehaviour
         {
             Instantiate(destructiblePrefab, position, Quaternion.identity);
             destructibleTiles.SetTile(cell, null);
+        }
+
+        if (tile is Tile t)
+        {   
+            if (t.sprite.name == "ExplosiveBrick")   // a explosive brick cause chain reaction
+            {
+                // explode nearby bricks
+                foreach (Vector2 nextdir in directions)
+                {
+                    if (Physics2D.OverlapBox(nextdir + position, Vector2.one / 2f, 0f, explosionLayerMask))
+                    {   
+                        ClearDestructible(nextdir + position);
+                    }
+                }
+            }
         }
     }
 
