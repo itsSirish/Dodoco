@@ -23,5 +23,4 @@ public class Explosion : MonoBehaviour
     {
         Destroy(gameObject, seconds);
     }
-
 }

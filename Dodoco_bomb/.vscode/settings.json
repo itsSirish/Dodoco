@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "unity-bomberman-tutorial-main.sln"
+    "dotnet.defaultSolution": "Dodoco_bomb.sln"
 }

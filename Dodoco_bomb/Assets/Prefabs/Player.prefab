@@ -680,4 +680,4 @@ MonoBehaviour:
   explosionRadius: 1
   destructibleTiles: {fileID: 0}
   destructiblePrefab: {fileID: -8738203639632321532, guid: 1ac7a5f8ae90ed04aa34c0753307c241, type: 3}
-  explosiveBrick: {fileID: 11400000, guid: f40b87c803080bb4aa0b4f539fb319d2, type: 2}
+  explosionSound: {fileID: 8300000, guid: 7976e2a697ed8e844b669369093355c7, type: 3}

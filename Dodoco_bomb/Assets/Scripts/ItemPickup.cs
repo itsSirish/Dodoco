@@ -10,13 +10,14 @@ public class ItemPickup : MonoBehaviour
     }
 
     public ItemType type;
+    public int bombIncreaseAmount = 1; // Amount of bombs to add
 
     private void OnItemPickup(GameObject player)
     {
         switch (type)
         {
             case ItemType.ExtraBomb:
-                player.GetComponent<BombController>().AddBomb();
+                player.GetComponent<BombController>().AddBomb(bombIncreaseAmount); // Pass the increase amount
                 break;
 
             case ItemType.BlastRadius:
@@ -28,7 +29,7 @@ public class ItemPickup : MonoBehaviour
                 break;
         }
 
-        Destroy(gameObject);
+        Destroy(gameObject); // Destroy the pickup item
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -37,5 +38,4 @@ public class ItemPickup : MonoBehaviour
             OnItemPickup(other.gameObject);
         }
     }
-
 }
