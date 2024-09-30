@@ -469,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6202b4bd6cdfe4aacbc20d3babb30d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTime: 120
+  totalTime: 180
   speed: {fileID: 114923158}
   bombRadius: {fileID: 1762027523}
   bombCount: {fileID: 1783099771}
@@ -562,15 +562,15 @@ PrefabInstance:
       objectReference: {fileID: 1958421160}
     - target: {fileID: 5499393632023110979, guid: 39d40d602c342fd45a4f725bd3bceaea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 5499393632023110979, guid: 39d40d602c342fd45a4f725bd3bceaea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: -3.92
       objectReference: {fileID: 0}
     - target: {fileID: 5499393632023110979, guid: 39d40d602c342fd45a4f725bd3bceaea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.66
       objectReference: {fileID: 0}
     - target: {fileID: 5499393632023110979, guid: 39d40d602c342fd45a4f725bd3bceaea, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3429,7 +3429,7 @@ MonoBehaviour:
   - {fileID: 1935067702}
   - {fileID: 684825989}
   maxEnemiesOnBoard: 4
-  totalEnemiesToSpawn: 30
+  totalEnemiesToSpawn: 8
 --- !u!4 &1560743794
 Transform:
   m_ObjectHideFlags: 0
@@ -7295,15 +7295,15 @@ PrefabInstance:
       objectReference: {fileID: 1958421160}
     - target: {fileID: 5499393632023110979, guid: 39d40d602c342fd45a4f725bd3bceaea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5499393632023110979, guid: 39d40d602c342fd45a4f725bd3bceaea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: 2.04
       objectReference: {fileID: 0}
     - target: {fileID: 5499393632023110979, guid: 39d40d602c342fd45a4f725bd3bceaea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.65
       objectReference: {fileID: 0}
     - target: {fileID: 5499393632023110979, guid: 39d40d602c342fd45a4f725bd3bceaea, type: 3}
       propertyPath: m_LocalRotation.w
